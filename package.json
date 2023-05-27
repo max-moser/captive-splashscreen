@@ -1,0 +1,29 @@
+{
+  "name": "captive-splashscreen",
+  "version": "1.0.0",
+  "description": "Splash screen for a captive portal",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack build --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maximilian Moser",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "css-loader": "^6.7.4",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss-loader": "^7.3.0",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.3.0",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  }
+}
