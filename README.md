@@ -19,3 +19,8 @@ The project can be built with the follwing commands:
 2. `npm run build`
 
 The finished artifacts are stored in `dist/`.
+
+
+## Screenshot
+
+![Screenshot of the splash screen](screenshot.png "Screenshot of the splash screen")
