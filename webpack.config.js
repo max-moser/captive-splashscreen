@@ -18,7 +18,7 @@ module.exports = {
     hot: true,
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: "./src/index.html" }),
+    new HtmlWebpackPlugin({ template: "./src/splash.html", filename: "splash.html" }),
     new MiniCssExtractPlugin(),
   ],
   module: {
