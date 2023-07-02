@@ -3,12 +3,50 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Internet access</title>
+    <link rel="icon" href="./img/icon.png" sizes="32x32" />
+    <title>Welcome to Bergwald!</title>
   </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>It's dangerous to go alone...</h1>
-      <button id="button" class="btn btn-primary">Click me!</button>
-    </div>
+
+  <body class="text-center">
+    <header class="jumbotron">
+      <h1>Welcome to Bergwald!</h1>
+    </header>
+
+    <article class="main container">
+      <section class="logo">
+        <img
+          src="./img/bergwald.png"
+          alt="Bergwald Logo"
+          class="img-fluid rounded"
+          width="400"
+        />
+      </section>
+
+      <section class="pleasant stay">
+        <ul>
+          <li>Wir w&uuml;nschen Ihnen einen sch&ouml;nen Aufenthalt!</li>
+          <li>We wish you a pleasant stay!</li>
+          <li>Nous vous souhaitons un agréable séjour!</li>
+        </ul>
+
+        <section class="signature">
+          Familie Moser
+        </section>
+      </section>
+
+      <section class="privacy alert alert-info container">
+        <strong>Privacy note:</strong> We do not collect any personal data.
+      </section>
+
+      <section class="form">
+        <form method="GET" id="login" action="$authaction">
+          <input type="hidden" name="accept_terms" value="yes" />
+          <input type="hidden" name="redir" value="$redir" />
+          <input type="hidden" name="tok" value="$tok" />
+          <input type="hidden" name="mode_login" />
+          <input type="submit" class="btn btn-outline-primary" value="OK" />
+        </form>
+      </section>
+    </article>
   </body>
 </html>

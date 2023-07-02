@@ -1,2 +1,129 @@
 // import all of bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+// CSS reset
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// NOTE: the actual font according to our style guide should be "Cloister Black Light"
+@font-face {
+  font-family: "EnglishTowne";
+  src: url("../fonts/EnglishTowne.ttf");
+  font-weight: bold normal;
+  font-style: normal;
+}
+
+// actual styling for the page
+body {
+  background-color: #c10000;
+  background-image: url("../img/red.png");
+  background-repeat: repeat;
+  height: 100vh;
+  max-height: 100vh;
+  flex-direction: column;
+  display: flex;
+
+  .jumbotron {
+    background-color: #f9c61b;
+    background-image: url("../img/yellow.png");
+    background-repeat: repeat;
+    border: solid black;
+    border-width: 0 0 medium 0;
+
+    h1 {
+      font-family: EnglishTowne;
+      padding: 0.5em;
+      font-size: 2.5em;
+      text-shadow: 0 0 3px white;
+
+      @media(min-width: 768px){
+        font-size: 3em;
+      }
+      @media(min-width: 992px){
+        font-size: 3.5em;
+      }
+      @media (min-width: 1200px) {
+        font-size: 4em;
+      }
+    }
+  }
+
+  .main.container {
+    display: flex;
+    background: #eaeaea;
+    border: solid black;
+    border-width: 0 medium;
+    padding: 0.5em 0;
+    flex-direction: column;
+    flex: 1 1 auto;
+
+    width: 85%;
+    @media (min-width: 768px) {
+      width: 75%;
+    }
+    @media (min-width: 1200px) {
+      width: 65%;
+    }
+
+    section {
+        flex: 1 1 auto;
+    }
+
+    .logo {
+        img {
+            margin: 1em;
+            width: 400px;
+            max-width: 60%;
+        }
+    }
+
+    .pleasant.stay {
+        margin-left: 2em;
+        margin-right: 2em;
+        font-style: italic;
+        font-size: 1.25em;
+    }
+
+    .signature {
+        color: #c10000;
+        font-family: EnglishTowne;
+        font-style: italic;
+        font-size: 2em;
+    }
+
+    .privacy.alert {
+        max-width: 66%;
+        flex-grow: 0;
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+
+        form {
+            flex: 1 1 auto;
+        }
+    }
+  }
+}
