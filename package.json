@@ -11,7 +11,8 @@
   "author": "Maximilian Moser",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "html-loader": "^4.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
